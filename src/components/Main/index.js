@@ -12,7 +12,15 @@ const Main = () => {
   return (
     <MainContainer id="home">
       <MainBg>
-      <VideoBg autoPlay loop muted src={Video} type="video/mp4"></VideoBg>
+      <video
+  autoPlay
+  loop
+  muted
+  //ref={videoRef}
+  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+>
+  <source src={Video} type="video/mp4" />
+</video>
       </MainBg>
       <MainContent>
         <MainH1>Alain Gionet</MainH1>
