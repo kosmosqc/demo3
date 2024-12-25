@@ -3,7 +3,6 @@ import Video from "../../medias/video.mp4";
 import {
   MainContainer,
   MainBg,
-  VideoBg,
   MainContent,
   MainH1,
 } from "./MainElements";
