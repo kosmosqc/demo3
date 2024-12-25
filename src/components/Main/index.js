@@ -12,7 +12,7 @@ const Main = () => {
   return (
     <MainContainer id="home">
       <MainBg>
-        <VideoBg autoPlay loop mutes src={Video} type="video/mp4"></VideoBg>
+      <VideoBg autoPlay loop muted src={Video} type="video/mp4"></VideoBg>
       </MainBg>
       <MainContent>
         <MainH1>Alain Gionet</MainH1>
