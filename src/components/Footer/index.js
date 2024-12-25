@@ -3,9 +3,6 @@ import { animateScroll as scroll } from "react-scroll/modules";
 
 import {
   FaLinkedin,
-  FaGitSquare,
-  FaGamepad,
-  FaDollarSign,
 } from "react-icons/fa";
 
 import { GrMail } from "react-icons/gr";
