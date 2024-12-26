@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const InfoContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
@@ -12,12 +13,16 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: auto; /* Ajuster pour s'adapter au contenu sur mobile */
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
+
+  @media screen and (max-width: 480px) {
+    padding: 0 16px; /* Réduire légèrement les marges */
+  }
   justify-content: center;
 `;
 
@@ -67,8 +72,12 @@ export const Heading = styled.h1`
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
 
+  @media screen and (max-width: 768px) {
+    font-size: 36px; /* Ajuste la taille pour les tablettes */
+  }
+
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 28px; /* Ajuste encore plus pour les mobiles */
   }
 `;
 export const Subtitle = styled.p`
@@ -83,13 +92,22 @@ export const Subtitle = styled.p`
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 export const ImgWrap = styled.div`
   max-width: 555px;
-  height: 100%;
+  height: auto;
 
   margin-left: ${({ marginSet }) => (marginSet ? "125px" : "0px")};
+
+  @media screen and (max-width: 768px) {
+    margin-left: 0; /* Centrer les images sur mobile */
+    max-width: 100%; /* S'assurer qu'elles ne débordent pas */
+  }
 `;
 
 export const Img = styled.img`

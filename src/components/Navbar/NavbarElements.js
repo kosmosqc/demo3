@@ -38,6 +38,9 @@ export const NavLogo = styled(LinkR)`
   align-items: center;
   margin-left: 24px;
   text-decoration: none;
+   @media screen and (max-width: 768px) {
+   font-size: .7rem;
+  }
 `;
 
 export const MobileIcon = styled.div`

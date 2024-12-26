@@ -36,7 +36,7 @@ const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome}>
-            Kosmos
+            Développeur ServiceNow | Javascript
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
@@ -63,9 +63,21 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Parcours & Expérience
+                Parcours 
               </NavLinks>
-            </NavItem>
+              </NavItem>
+              <NavItem>
+              <NavLinks
+                to="exp"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Éxperience
+              </NavLinks>
+              </NavItem>
             <NavItem>
               <NavLinks
                 to="projet"
@@ -81,7 +93,7 @@ const Navbar = ({ toggle }) => {
 
             <NavBtn>
               <NavBtnLink onClick={toggleHome} to="/Skill">
-                Skill
+                Skills
               </NavBtnLink>
             </NavBtn>
           </NavMenu>

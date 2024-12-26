@@ -24,8 +24,11 @@ const Projets = () => {
           <ProjetsLink href="https://kosmicdiscovery.vercel.app/">
             <ProjetsCard>
               <ProjetsIcon src={Icon1} />
-              <ProjetsH2>Blog de science</ProjetsH2>
+              <ProjetsH2>Blog de science
+                
+              </ProjetsH2>
               <ProjetsP>
+              
               Un blog qui parle de science et de diverse théorie
               </ProjetsP>
             </ProjetsCard>

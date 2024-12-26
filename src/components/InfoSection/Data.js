@@ -24,7 +24,7 @@ export const homeObg2 = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topline: "Parcours & expérience",
+  topline: "Parcours",
   headLine:
     "J'ai commencé très jeunes avec un commodore 64 pour ensuite évoluer vers les Pentium I-IV avec msdos et Windows 3.1 ",
   description:
@@ -38,4 +38,24 @@ export const homeObg2 = {
   marginSet: false,
   primary: false,
   darkText: true,
+};
+export const homeObg3 = {
+  id: "exp",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topline: "Développeur ServiceNow | Javascript",
+  headLine:
+    " Mon parcours chez Fx innovation mas permis d'acquérir une solide expérience sur la plateforme ServiceNow.",
+  description:
+    "J'ai aussi acquis un solide expérience en JavaScript sur SNOW et je travaille sur un blog personnel en node.js que je gère entièreté jusqu'à déploiement ainsi que l'écriture des articles.  ",
+  buttonLabel: "Top",
+  imgStart: false,
+  img: require("../../medias/exp.webp"),
+  widthSet: false,
+  alt: "car",
+  dark: true,
+  marginSet: true,
+  primary: true,
+  darkText: false,
 };
