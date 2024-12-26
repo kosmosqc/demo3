@@ -167,9 +167,9 @@
 		
 		height: 1140px;
 		
-		
+		background-image: url("../../medias/bck5(1).jpg"); /* Chemin relatif au fichier CSS */
 		z-index: 1;
-		background-image: url("../../medias/bck.jpg"); /* Chemin relatif au fichier CSS */
+		
 		background-size: cover; /* L'image couvre tout le conteneur */
 		background-position: center; /* Centre l'image */
 		background-repeat: no-repeat; /* Évite la répétition de l'image */
