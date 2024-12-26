@@ -6,6 +6,7 @@ const Skillpage = () => {
   const navigate = useNavigate(); // Initialisation de useNavigate
 
   return (
+    
     <div className="container"> {/* La classe container utilise l'image de fond */}
       <button
         onClick={() => navigate(-1)} // Navigation vers la page précédente
@@ -22,10 +23,15 @@ const Skillpage = () => {
       >
         Retour
       </button>
+      <div>erer</div>
       <p>Skills et outils</p>
       <div className="col">
         <h2 className="titre">Skills</h2>
         <ul className="skill">
+        <li>
+            <span className="purpleline servicenow"></span>
+            <em>ServiceNow</em>
+          </li>
           <li>
             <span className="purpleline javascript"></span>
             <em>Javascript</em>
@@ -82,23 +88,29 @@ const Skillpage = () => {
         </ul>
         <h2 className="titre">Passion</h2>
         <ul className="ul2">
-          <li>Informatique</li>
-          <li>Astronomie</li>
-          <li>Science</li>
+          <li>Informatique & Technologie</li>
+          <li>Astronomie & Science</li>
+          <li>Histoire & Art</li>
         </ul>
       </div>
       <div className="col">
         <h2 className="titre">Expérience</h2>
         <ul className="ul2">
+        <li>
+            2022-2024
+            ServiceNow Développeur
+          </li><br />
           <li>
             2022 Stage de 8 semaines : concevoir un site web en PHP avec SQL,
-            HTML, CSS pour la gestion de membre et la location de jouet
+            HTML, CSS 
           </li>
         </ul>
         <h2 className="titre">Formation</h2>
         <ul className="ul2">
-          <li>2021-2022 (Diplôme obtenu)</li>
-          <li>Collège Rosemont : AEC en programmation orientée objet</li>
+        <li>Certified ServiceNow implementer 2024</li><br />
+        <li>Certified ServiceNow administrator 2022</li><br />
+          <li>2021-2022Collège Rosemont : AEC en programmation orientée objet</li>
+          
         </ul>
       </div>
     </div>

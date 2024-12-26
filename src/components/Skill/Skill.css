@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
 	.container {
-		background-image: url("../../medias/bck.webp"); /* Chemin relatif au fichier CSS */
+		background-image: url("../../medias/bck.jpg"); /* Chemin relatif au fichier CSS */
 		background-size: cover; /* L'image couvre tout le conteneur */
 		background-position: center; /* Centre l'image */
 		background-repeat: no-repeat; /* Évite la répétition de l'image */
@@ -141,7 +141,8 @@
 	  margin-top: -5%;
 	} 
 	/*skill*/
-	.javascript        { width:90%;  animation:javascript 3s ease-out;       }
+	.servicenow      { width:90%;  animation:servicenow  3s ease-out;     }
+	.javascript        { width:85%;  animation:javascript 3s ease-out;       }
 	.react        { width:70%;  animation:react 3s ease-out;        }
 	.node        { width:70%;  animation:node 3s ease-out;        }
 	.html      { width:60%;  animation:html 3s ease-out;     }
@@ -165,9 +166,16 @@
 	.container {
 		
 		height: 1140px;
-		  padding:2%;
-		background-color: #000;
+		
+		
 		z-index: 1;
+		background-image: url("../../medias/bck.jpg"); /* Chemin relatif au fichier CSS */
+		background-size: cover; /* L'image couvre tout le conteneur */
+		background-position: center; /* Centre l'image */
+		background-repeat: no-repeat; /* Évite la répétition de l'image */
+		min-height: 100vh; /* Hauteur minimale pour couvrir la fenêtre */
+		padding: 2%;
+		box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8);
 		
 	}
 	.titre {
@@ -178,7 +186,7 @@
 		text-align:center;
 		color:#ffffff;
 	  
-	  background:#000;
+	  background:#000000;
 		border-radius:2px;
 		border: 1px solid #5f43b2;  
 	
@@ -228,9 +236,9 @@
 @keyframes titre      { 0% { opacity:0; } 100% { opacity:1; }  }
 
 /*skill*/
-@keyframes javascript        { 0% { width:0px; } 100% { width: 90%; }  }
+@keyframes servicenow        { 0% { width:0px; } 100% { width:90%; }  }
+@keyframes javascript        { 0% { width:0px; } 100% { width: 85%; }  }
 @keyframes react         { 0% { width:0px; } 100% { width:70%; }  }
-@keyframes csharp         { 0% { width:0px; } 100% { width:60%; }  }
 @keyframes node { 0% { width:0px; } 100% { width:70%; }  }
 @keyframes php      { 0% { width:0px; } 100% { width:60%; }  }
 @keyframes html      { 0% { width:0px; } 100% { width:60%; }  }
@@ -254,7 +262,7 @@
 
 
 body{
-	background-color: #010606;
+	background-color: #000000;
 }
 
 
@@ -266,7 +274,7 @@ p{
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  margin-top: 16px;
+  margin-top: -50px;
   
 
 }
