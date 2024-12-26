@@ -58,6 +58,7 @@ export const Topline = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
+  margin-top: 16px;
 `;
 export const Heading = styled.h1`
   margin-bottom: 24px;
@@ -71,6 +72,7 @@ export const Heading = styled.h1`
   }
 `;
 export const Subtitle = styled.p`
+  margin-top: 16px;
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;

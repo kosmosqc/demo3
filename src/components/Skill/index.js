@@ -24,7 +24,7 @@ const Skillpage = () => {
         Retour
       </button>
       <div>erer</div>
-      <p>Skills et outils</p>
+      <p className="skillp" >Skills et outils</p>
       <div className="col">
         <h2 className="titre">Skills</h2>
         <ul className="skill">
