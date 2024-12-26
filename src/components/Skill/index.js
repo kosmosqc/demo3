@@ -1,12 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Import de useNavigate
-import "./Skill.css";
+import "./Skill.css"; // Assurez-vous que Skill.css est importé correctement
 
 const Skillpage = () => {
   const navigate = useNavigate(); // Initialisation de useNavigate
 
   return (
-    <div className="container">
+    <div className="container"> {/* La classe container utilise l'image de fond */}
       <button
         onClick={() => navigate(-1)} // Navigation vers la page précédente
         className="back-button"
@@ -35,16 +35,8 @@ const Skillpage = () => {
             <em>React.js</em>
           </li>
           <li>
-            <span className="purpleline csharp"></span>
-            <em>C#</em>
-          </li>
-          <li>
-            <span className="purpleline cplus"></span>
-            <em>C++</em>
-          </li>
-          <li>
-            <span className="purpleline php "></span>
-            <em>PHP</em>
+            <span className="purpleline node"></span>
+            <em>Node.js</em>
           </li>
           <li>
             <span className="purpleline html"></span>
@@ -57,14 +49,6 @@ const Skillpage = () => {
           <li>
             <span className="purpleline sql"></span>
             <em>SQL</em>
-          </li>
-          <li>
-            <span className="purpleline java"></span>
-            <em>Java</em>
-          </li>
-          <li>
-            <span className="purpleline Asp"></span>
-            <em>Asp.net</em>
           </li>
         </ul>
       </div>
@@ -95,10 +79,9 @@ const Skillpage = () => {
             <span className="purpleline ps"></span>
             <em>PhotoShop</em>
           </li>
-          <h2 className="titre">Passion</h2>
         </ul>
+        <h2 className="titre">Passion</h2>
         <ul className="ul2">
-          <br />
           <li>Informatique</li>
           <li>Astronomie</li>
           <li>Science</li>
@@ -107,17 +90,15 @@ const Skillpage = () => {
       <div className="col">
         <h2 className="titre">Expérience</h2>
         <ul className="ul2">
-          2022 Stage de 8 semaines
           <li>
-            Défis : concevoir un site web en PHP avec SQL,HTML,CSS pour la
-            gestion de membre et la location de jouet
+            2022 Stage de 8 semaines : concevoir un site web en PHP avec SQL,
+            HTML, CSS pour la gestion de membre et la location de jouet
           </li>
-          <br />
         </ul>
         <h2 className="titre">Formation</h2>
         <ul className="ul2">
-          2021-2022 (Diplôme obtenu)
-          <li> Collège Rosemont : AEC en programmation orientée objet</li>
+          <li>2021-2022 (Diplôme obtenu)</li>
+          <li>Collège Rosemont : AEC en programmation orientée objet</li>
         </ul>
       </div>
     </div>
