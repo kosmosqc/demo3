@@ -7,7 +7,7 @@ export const homeObg1 = {
   headLine:
     " Motivé, débrouillard et doté d'une excellente capacité de résolution de problèmes",
   description:
-    "Autrefois un électricien compétent... suite à la vente de l’édifice pour laquel je travaillais et l'arrivée de la pandémie, j'ai pris la décision de changer de carrière pour relever de nouveaux défis et utiliser mon plein potentiel. ",
+    "Autrefois un électricien compétent... suite à la vente de l’édifice pour lequel je travaillais et à l'arrivée de la pandémie, j'ai pris la décision de changer de carrière pour relever de nouveaux défis et utiliser mon plein potentiel. ",
   buttonLabel: "Top",
   imgStart: false,
   img: require("../../medias/8.jpg"),
@@ -26,7 +26,7 @@ export const homeObg2 = {
   lightTextDesc: false,
   topline: "Parcours",
   headLine:
-    "J'ai commencé très jeune avec un commodore 64 pour ensuite évoluer vers les Pentium I-IV avec MS-DOS et Windows 3.1 ",
+    "J'ai commencé très jeune avec un Commodore 64 pour ensuite évoluer vers les Pentium I-IV avec MS-DOS et Windows 3.1 ",
   description:
     " (que j’installais avec une pile de disquettes). J’étais là au début de l’internet avec un modem 14.4k et le navigateur Netscape. Enfin bref, j’ai toujours été passionné d’informatique et je suis resté à l’affût de l’évolution technologique jusqu’à aujourd’hui.",
   buttonLabel: "Top",
@@ -46,7 +46,7 @@ export const homeObg3 = {
   lightTextDesc: true,
   topline: "Développeur ServiceNow | Javascript",
   headLine:
-    " Mon parcours chez Fx innovation m'as permis d'acquérir une solide expérience sur la plateforme ServiceNow.",
+    " Mon parcours chez Fx Innovation m'a permis d'acquérir une solide expérience sur la plateforme ServiceNow.",
   description:
     "J'ai aussi acquis une solide expérience en JavaScript sur SNOW et je travaille actuellement sur un blog scientifique personnel avec Next.js que je gère entièrement jusqu'au déploiement ainsi que sur l'écriture des articles.  ",
   buttonLabel: "Top",
