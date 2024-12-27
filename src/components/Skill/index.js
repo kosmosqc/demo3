@@ -42,7 +42,7 @@ const Skillpage = () => {
           </li>
           <li>
             <span className="purpleline node"></span>
-            <em>Node.js</em>
+            <em>Next.js</em>
           </li>
           <li>
             <span className="purpleline html"></span>
