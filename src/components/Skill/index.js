@@ -6,8 +6,9 @@ const Skillpage = () => {
   const navigate = useNavigate(); // Initialisation de useNavigate
 
   return (
-    
-    <div className="container"> {/* La classe container utilise l'image de fond */}
+    <div className="container">
+      {" "}
+      {/* La classe container utilise l'image de fond */}
       <button
         onClick={() => navigate(-1)} // Navigation vers la page précédente
         className="back-button"
@@ -23,12 +24,12 @@ const Skillpage = () => {
       >
         Retour
       </button>
-      <div>erer</div>
-      <p className="skillp" >Skills et outils</p>
+      
+      <p className="skillp">Skills et outils</p>
       <div className="col">
         <h2 className="titre">Skills</h2>
         <ul className="skill">
-        <li>
+          <li>
             <span className="purpleline servicenow"></span>
             <em>ServiceNow</em>
           </li>
@@ -96,21 +97,22 @@ const Skillpage = () => {
       <div className="col">
         <h2 className="titre">Expérience</h2>
         <ul className="ul2">
-        <li>
-            2022-2024
-            ServiceNow Développeur
-          </li><br />
+          <li>2022-2024 ServiceNow Développeur</li>
+          <br />
           <li>
             2022 Stage de 8 semaines : concevoir un site web en PHP avec SQL,
-            HTML, CSS 
+            HTML, CSS
           </li>
         </ul>
         <h2 className="titre">Formation</h2>
         <ul className="ul2">
-        <li>Certified ServiceNow implementer 2024</li><br />
-        <li>Certified ServiceNow administrator 2022</li><br />
-          <li>2021-2022Collège Rosemont : AEC en programmation orientée objet</li>
-          
+          <li>Certified ServiceNow implementer 2024</li>
+          <br />
+          <li>Certified ServiceNow administrator 2022</li>
+          <br />
+          <li>
+            2021-2022Collège Rosemont : AEC en programmation orientée objet
+          </li>
         </ul>
       </div>
     </div>
