@@ -35,6 +35,12 @@ const Sidebar = ({ isOpen, toggle }) => {
             <SidebarLink onClick={toggle} to="exp">
               Éxperience
             </SidebarLink>
+            <SidebarLink as="a" // Permet de transformer le NavLinks en lien classique
+                href="/cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer">
+              C.V
+            </SidebarLink>
           </SidebarMenu>
           {
             <SideBtnWrap>

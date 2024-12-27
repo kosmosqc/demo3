@@ -63,10 +63,10 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Parcours 
+                Parcours
               </NavLinks>
-              </NavItem>
-              <NavItem>
+            </NavItem>
+            <NavItem>
               <NavLinks
                 to="exp"
                 smooth={true}
@@ -77,7 +77,7 @@ const Navbar = ({ toggle }) => {
               >
                 Éxperience
               </NavLinks>
-              </NavItem>
+            </NavItem>
             <NavItem>
               <NavLinks
                 to="projet"
@@ -90,7 +90,17 @@ const Navbar = ({ toggle }) => {
                 Projets
               </NavLinks>
             </NavItem>
-
+            <NavItem>
+              <NavLinks
+                as="a" // Permet de transformer le NavLinks en lien classique
+                href="/cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                C.V
+              </NavLinks>
+            </NavItem>
+            
             <NavBtn>
               <NavBtnLink onClick={toggleHome} to="/Skill">
                 Skills
