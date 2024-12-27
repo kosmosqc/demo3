@@ -48,7 +48,7 @@ export const homeObg3 = {
   headLine:
     " Mon parcours chez Fx innovation mas permis d'acquérir une solide expérience sur la plateforme ServiceNow.",
   description:
-    "J'ai aussi acquis un solide expérience en JavaScript sur SNOW et je travaille sur un blog personnel en node.js que je gère entièrement jusqu'au déploiement ainsi que l'écriture des articles. ",
+    "J'ai aussi acquis une solide expérience en JavaScript sur SNOW et je travaille présentement sur un blog scientifique personnel en node.js que je gère entièrement jusqu'au déploiement ainsi que l'écriture des articles.  ",
   buttonLabel: "Top",
   imgStart: false,
   img: require("../../medias/exp.webp"),
