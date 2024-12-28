@@ -23,7 +23,7 @@ const Projets = () => {
         <ProjetsWrapper>
           <ProjetsLink href="https://kosmicdiscovery.vercel.app/">
             <ProjetsCard>
-              <ProjetsIcon src={Icon1} />
+              <ProjetsIcon src={Icon3} />
               <ProjetsH2>Blog de science
                 
               </ProjetsH2>
@@ -44,7 +44,7 @@ const Projets = () => {
             </ProjetsP>
           </ProjetsCard>
           <ProjetsCard>
-            <ProjetsIcon src={Icon3} />
+            <ProjetsIcon src={Icon1} />
             <ProjetsH2>Demo</ProjetsH2>
             <ProjetsP>
               <br />
