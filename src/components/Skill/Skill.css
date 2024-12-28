@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
 	.container {
-    background-image: url("../../medias/bck5(1).jpg"); /* Chemin relatif au fichier CSS */
+    background-image: url("../../medias/bck7.jpg"); /* Chemin relatif au fichier CSS */
     background-size: cover; /* L'image couvre tout le conteneur */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Évite la répétition de l'image */
@@ -93,24 +93,40 @@
   }
 }
 		/*skill*/
-		.servicenow      { width:75%;  animation:servicenow  5s ease-out;     }
-		.javascript        { width:70%;  animation:javascript 5s ease-out;       }
-		.react        { width:60%;  animation:react 5s ease-out;        }
-		.node        { width:65%;  animation:node 5s ease-out;        }
-		.html      { width:60%;  animation:html 5s ease-out;     }
-		.css     { width:65%;  animation:css 5s ease-out;     }
-		.sql      { width:60%;  animation:sql 5s ease-out;     }
+		.servicenow      { width:75%;  animation:servicenow  4s ease-out;     }
+		.javascript        { width:70%;  animation:javascript 4s ease-out;       }
+		.react        { width:60%;  animation:react 4s ease-out;        }
+		.node        { width:65%;  animation:node 4s ease-out;        }
+		.html      { width:60%;  animation:html 4s ease-out;     }
+		.css     { width:65%;  animation:css 4s ease-out;     }
+		.sql      { width:60%;  animation:sql 4s ease-out;     }
 
 
 /*outil*/
-.win10    { width:75%;  animation:win10 5s ease-out;  }
-.powershell  { width:65%;  animation:powershell 5s ease-out; }
-.linux  { width:55%;  animation:linux 5s ease-out;     }
-.visual     { width:75%;  animation:visual 5s ease-out;    }
-.git      { width:70%;  animation:git 5s ease-out;     }
-.ps      { width:65%;  animation:ps 5s ease-out;     }
+.win10    { width:75%;  animation:win10 4s ease-out;  }
+.powershell  { width:65%;  animation:powershell 4s ease-out; }
+.linux  { width:55%;  animation:linux 4s ease-out;     }
+.visual     { width:75%;  animation:visual 4s ease-out;    }
+.git      { width:70%;  animation:git 4s ease-out;     }
+.ps      { width:65%;  animation:ps 4s ease-out;     }
+
+/*skill*/
+@keyframes servicenow        { 0% { width:0px; } 100% { width:75%; }  }
+@keyframes javascript        { 0% { width:0px; } 100% { width: 70%; }  }
+@keyframes react         { 0% { width:0px; } 100% { width:60%; }  }
+@keyframes node { 0% { width:0px; } 100% { width:65%; }  }
+@keyframes html      { 0% { width:0px; } 100% { width:60%; }  }
+@keyframes css     { 0% { width:0px; } 100% { width:65%; }  }
+@keyframes sql      { 0% { width:0px; } 100% { width:60%; }  }
 
 
+/*outil*/
+@keyframes win10   { 0% { width:0px; } 100% { width:75%; }  }
+@keyframes powershell  { 0% { width:0px; } 100% { width:65%; }  }
+@keyframes linux      { 0% { width:0px; } 100% { width:55%; }  }
+@keyframes visual     { 0% { width:0px; } 100% { width:75%; }  }
+@keyframes git      { 0% { width:0px; } 100% { width:70%; }  }
+@keyframes ps      { 0% { width:0px; } 100% { width:65%; }  }
 
 @media only screen and (min-width:601px) {
 	h1{
@@ -163,11 +179,29 @@
 .git      { width:70%;  animation:git 3s ease-out;     }
 .ps      { width:80%;  animation:ps 3s ease-out;     }
 
+/*skill*/
+@keyframes servicenow        { 0% { width:0px; } 100% { width:90%; }  }
+@keyframes javascript        { 0% { width:0px; } 100% { width: 85%; }  }
+@keyframes react         { 0% { width:0px; } 100% { width:70%; }  }
+@keyframes node { 0% { width:0px; } 100% { width:70%; }  }
+@keyframes html      { 0% { width:0px; } 100% { width:60%; }  }
+@keyframes css     { 0% { width:0px; } 100% { width:60%; }  }
+@keyframes sql      { 0% { width:0px; } 100% { width:60%; }  }
+
+
+/*outil*/
+@keyframes win10   { 0% { width:0px; } 100% { width:90%; }  }
+@keyframes powershell  { 0% { width:0px; } 100% { width:70%; }  }
+@keyframes linux      { 0% { width:0px; } 100% { width:60%; }  }
+@keyframes visual     { 0% { width:0px; } 100% { width:80%; }  }
+@keyframes git      { 0% { width:0px; } 100% { width:70%; }  }
+@keyframes ps      { 0% { width:0px; } 100% { width:80%; }  }
+
 	.container {
 		
 		height: 1140px;
 		
-		background-image: url("../../medias/bck5(1).jpg"); /* Chemin relatif au fichier CSS */
+		background-image: url("../../medias/bck7.jpg"); /* Chemin relatif au fichier CSS */
 		z-index: 1;
 		
 		background-size: cover; /* L'image couvre tout le conteneur */
@@ -231,29 +265,11 @@
 	box-shadow: 0px 0px 10px 1px #5f43b2;
 }
 
-.titre      { opacity:1;  animation:titre 5s ease-out;     }
+.titre      { opacity:1;  animation:titre 4s ease-out;     }
 
 @keyframes titre      { 0% { opacity:0; } 100% { opacity:1; }  }
 
-/*skill*/
-@keyframes servicenow        { 0% { width:0px; } 100% { width:90%; }  }
-@keyframes javascript        { 0% { width:0px; } 100% { width: 85%; }  }
-@keyframes react         { 0% { width:0px; } 100% { width:70%; }  }
-@keyframes node { 0% { width:0px; } 100% { width:70%; }  }
-@keyframes php      { 0% { width:0px; } 100% { width:60%; }  }
-@keyframes html      { 0% { width:0px; } 100% { width:60%; }  }
-@keyframes css     { 0% { width:0px; } 100% { width:60%; }  }
-@keyframes sql      { 0% { width:0px; } 100% { width:60%; }  }
-@keyframes java      { 0% { width:0px; } 100% { width:70%; }  }
-@keyframes Asp      { 0% { width:0px; } 100% { width:50%; }  }
 
-/*outil*/
-@keyframes win10   { 0% { width:0px; } 100% { width:90%; }  }
-@keyframes powershell  { 0% { width:0px; } 100% { width:70%; }  }
-@keyframes linux      { 0% { width:0px; } 100% { width:60%; }  }
-@keyframes visual     { 0% { width:0px; } 100% { width:80%; }  }
-@keyframes git      { 0% { width:0px; } 100% { width:70%; }  }
-@keyframes ps      { 0% { width:0px; } 100% { width:80%; }  }
 
 body{
 	background-color: #000000;
