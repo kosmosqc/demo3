@@ -129,9 +129,7 @@
 @keyframes ps      { 0% { width:0px; } 100% { width:65%; }  }
 
 @media only screen and (min-width:601px) {
-	h1{
-		font-family:Verdana, Geneva, Tahoma, sans-serif;
-	}
+
 	.ul2{
 		color: #dedede;
 		font-size: 20px;
@@ -275,19 +273,12 @@ body{
 	background-color: #000000;
 }
 
-p{
-  
-  color: #5f43b2;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  margin-top: 16px;
-  
-
-}
 .skillp{
+	color: #5f43b2;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 700;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
 	
-	margin-top: -70px;
 }
