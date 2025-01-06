@@ -33,7 +33,7 @@ export const homeObg2 = {
   widthSet:false,
   img: require("../../medias/com64.webp"),
   dark: false,
-  marginSet: false,
+  marginSet: true,
   primary: false,
   darkText: true,
 };

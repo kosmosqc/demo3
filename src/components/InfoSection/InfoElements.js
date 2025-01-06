@@ -111,8 +111,10 @@ export const ImgWrap = styled.div`
   margin-left: ${({ marginSet }) => (marginSet ? "125px" : "0px")};
 
   @media screen and (max-width: 768px) {
-    margin-left: 0;
-    max-width: 80%; /* Augmente légèrement pour mobile */
+    
+    
+    
+    
   }
 `;
 

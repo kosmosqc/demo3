@@ -45,7 +45,7 @@ const Footer = () => {
             <WebsiteRights>
               {" "}
               Alain Gionet © {new Date().getFullYear()} Codé avec React.js et
-              déployé avec github
+              déployé avec Github  <br/> | Optimisé pour PC 🖥️ & Adapté aux mobiles 📱 |
             </WebsiteRights>
           </SocialMediaWrap>
         </SocialMedia>
