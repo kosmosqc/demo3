@@ -39,7 +39,7 @@ export const ProjetsWrapper = styled.div`
 `;
 
 export const ProjetsCard = styled.div`
-  background: #fff;
+  background: #c4c2c2;
   display: flex;
   flex-direction: column;
   justify-content: center;

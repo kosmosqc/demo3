@@ -12,7 +12,7 @@ export const homeObg1 = {
   imgStart: false,
   img: require("../../medias/me.png"),
   widthSet: false,
-  dark: true,
+  dark: false,
   marginSet: true,
   primary: true,
   darkText: false,
@@ -34,7 +34,7 @@ export const homeObg2 = {
   img: require("../../medias/com64.webp"),
   dark: false,
   marginSet: true,
-  primary: false,
+  primary: true,
   darkText: true,
 };
 export const homeObg3 = {
@@ -51,7 +51,7 @@ export const homeObg3 = {
   imgStart: false,
   img: require("../../medias/exp.webp"),
   widthSet: false,
-  dark: true,
+  dark: false,
   marginSet: true,
   primary: true,
   darkText: false,

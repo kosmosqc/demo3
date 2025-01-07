@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  background: ${({ lightBg }) => (lightBg ? "#c4c2c2" : "#010606")};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -72,7 +72,7 @@ export const Heading = styled.h1`
   font-size: 30px; /* Réduit légèrement la taille */
   line-height: 1.3; /* Ajoute de l'espacement entre les lignes */
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  color: ${({ lightText }) => (lightText ? "#c4c2c2" : "#010606")};
   text-align: left; /* Assure l'alignement propre */
 
   @media screen and (max-width: 768px) {
@@ -90,25 +90,27 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 1.8; /* Espacement plus généreux */
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  color: ${({ darkText }) => (darkText ? "#010606" : "#c4c2c2")};
   font-family: "Roboto", Arial, sans-serif; /* Police propre et lisible */
   text-align: left; /* Remplace justify par left */
 `;
 
 
 export const BtnWrap = styled.div`
+ 
   display: flex;
   justify-content: flex-start;
  font-size: 15px;
   @media screen and (max-width: 768px) {
     justify-content: center;
   }
+
 `;
 
 export const ImgWrap = styled.div`
   max-width: 555px;
   height: auto;
-  margin-left: ${({ marginSet }) => (marginSet ? "125px" : "0px")};
+  margin-left: ${({ marginSet }) => (marginSet ? "80px" : "0px")};
 
   @media screen and (max-width: 768px) {
     
@@ -120,7 +122,7 @@ export const ImgWrap = styled.div`
 
 
 export const Img = styled.img`
-  width: ${({ widthSet }) => (widthSet ? "100%" : "50%")};
+  width: ${({ widthSet }) => (widthSet ? "100%" : "70%")};
 
   margin: 0 0 10px 0;
   padding: 0;
