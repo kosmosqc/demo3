@@ -93,7 +93,7 @@ const Navbar = ({ toggle }) => {
             <NavBtn>
               <NavBtnLink
                 as="a" // Permet de transformer le NavLinks en lien classique
-                to="/cv.pdf"
+                href="/cv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
