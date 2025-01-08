@@ -90,16 +90,16 @@ const Navbar = ({ toggle }) => {
                 Projets
               </NavLinks>
             </NavItem>
-            <NavItem>
-              <NavLinks
+            <NavBtn>
+              <NavBtnLink
                 as="a" // Permet de transformer le NavLinks en lien classique
-                href="/cv.pdf"
+                to="/cv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                C.V
-              </NavLinks>
-            </NavItem>
+                CV
+              </NavBtnLink>
+            </NavBtn>
             
             <NavBtn>
               <NavBtnLink onClick={toggleHome} to="/Skill">

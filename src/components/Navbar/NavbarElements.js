@@ -41,6 +41,12 @@ export const NavLogo = styled(LinkR)`
    @media screen and (max-width: 768px) {
    font-size: .7rem;
   }
+    &:hover {
+    transform: scale(1) rotate(5deg) skewX(10deg);
+      letter-spacing: 0.3rem;
+      color: #5f43b2;
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  }
 `;
 
 export const MobileIcon = styled.div`
@@ -79,7 +85,7 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0 20px;
   height: 100%;
   cursor: pointer;
   &:hover {
@@ -101,12 +107,13 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(LinkR)`
-  border-radius: 50px;
+  margin 1px;
+ 
   background: #5f43b2;
   white-space: nowrap;
-  padding: 10px 22px;
+  padding: 5px 10px;
   color: #c4c2c2;
-  font-size: 16px;
+  font-size: 14px;
   outline: none;
   border: none;
   cursor: pointer;
