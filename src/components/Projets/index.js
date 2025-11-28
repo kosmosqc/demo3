@@ -36,12 +36,9 @@ const Projets = () => {
           <ProjetsLink href="https://life-stats-gamma.vercel.app/">
           <ProjetsCard>
             <ProjetsIcon src={Icon2} />
-            <ProjetsH2>Demo</ProjetsH2>
+            <ProjetsH2>Life Stats CalculatorDemo</ProjetsH2>
             <ProjetsP>
-              <br />
-              <br />
-              <br />
-              Life Stats Calculator (petite app)
+              Petite application qui affiche des infos intéressantes avec l'année de naissance de l'utilisateur
             </ProjetsP>
           </ProjetsCard>
           </ProjetsLink>
