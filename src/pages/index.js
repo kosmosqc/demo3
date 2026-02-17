@@ -4,7 +4,12 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Section from "../components/Main";
 import InfoSection from "../components/InfoSection";
-import { homeObg1, homeObg2, homeObg3} from "../components/InfoSection/Data";
+import {
+  homeObg1,
+  homeObg2,
+  homeObg3,
+  homeObg4,
+} from "../components/InfoSection/Data";
 import Projets from "../components/Projets";
 import Footer from "../components/Footer";
 
@@ -23,6 +28,7 @@ const Home = () => {
       <InfoSection {...homeObg1} />
       <InfoSection {...homeObg2} />
       <InfoSection {...homeObg3} />
+      <InfoSection {...homeObg4} />
       {/* <InfoSection {...homeObg1a}/> */}
       <Projets />
 

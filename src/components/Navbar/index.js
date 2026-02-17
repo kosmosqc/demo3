@@ -26,17 +26,19 @@ const Navbar = ({ toggle }) => {
 
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
+    return () => window.removeEventListener("scroll", changeNav);
   }, []);
 
   const toggleHome = () => {
     scroll.scrollToTop();
   };
+
   return (
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome}>
-            Développeur ServiceNow | Javascript
+            Développeur ServiceNow | JavaScript
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
@@ -75,7 +77,7 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Éxperience
+                Expérience
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -92,7 +94,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavBtn>
               <NavBtnLink
-                as="a" // Permet de transformer le NavLinks en lien classique
+                as="a"
                 href="/cv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -100,7 +102,7 @@ const Navbar = ({ toggle }) => {
                 CV
               </NavBtnLink>
             </NavBtn>
-            
+
             <NavBtn>
               <NavBtnLink onClick={toggleHome} to="/Skill">
                 Skills

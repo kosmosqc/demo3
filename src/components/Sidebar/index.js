@@ -15,6 +15,7 @@ const Sidebar = ({ isOpen, toggle }) => {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
+
   return (
     <>
       <SidebarContainer isOpen={isOpen} onClick={toggle}>
@@ -33,22 +34,22 @@ const Sidebar = ({ isOpen, toggle }) => {
               Projets
             </SidebarLink>
             <SidebarLink onClick={toggle} to="exp">
-              Éxperience
+              Expérience
             </SidebarLink>
-            <SidebarLink as="a" // Permet de transformer le NavLinks en lien classique
-                href="/cv.pdf"
-                target="_blank"
-                rel="noopener noreferrer">
-              C.V
+            <SidebarLink
+              as="a"
+              href="/cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CV
             </SidebarLink>
           </SidebarMenu>
-          {
-            <SideBtnWrap>
-              <SidebarRoute onClick={toggleHome} to="/Skill">
-                Skill
-              </SidebarRoute>
-            </SideBtnWrap>
-          }
+          <SideBtnWrap>
+            <SidebarRoute onClick={toggleHome} to="/Skill">
+              Skills
+            </SidebarRoute>
+          </SideBtnWrap>
         </SideBarWrapper>
       </SidebarContainer>
     </>

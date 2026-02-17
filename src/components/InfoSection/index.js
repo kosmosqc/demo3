@@ -33,7 +33,6 @@ const InfoSection = ({
   widthSet,
   marginSet,
 }) => {
-  console.log(marginSet);
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>

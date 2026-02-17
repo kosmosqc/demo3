@@ -111,19 +111,26 @@ export const ImgWrap = styled.div`
   max-width: 555px;
   height: auto;
   margin-left: ${({ marginSet }) => (marginSet ? "80px" : "0px")};
+  display: flex;
+  justify-content: center;
 
   @media screen and (max-width: 768px) {
-    
-    
-    
-    
+    margin-left: 0;
   }
 `;
 
 
 export const Img = styled.img`
-  width: ${({ widthSet }) => (widthSet ? "100%" : "70%")};
-
+  width: ${({ widthSet }) => (widthSet ? "100%" : "78%")};
+  max-width: 100%;
   margin: 0 0 10px 0;
   padding: 0;
+
+  @media screen and (max-width: 768px) {
+    width: ${({ widthSet }) => (widthSet ? "100%" : "88%")};
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;

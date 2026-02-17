@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const ProjetsContainer = styled.div`
-  height: 1000px;
+  min-height: 1000px;
+  padding: 80px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,10 +10,10 @@ export const ProjetsContainer = styled.div`
   background: #010606;
 
   @media screen and (max-width: 768px) {
-    height: 1100px;
+    min-height: 1100px;
   }
   @media screen and (max-width: 480px) {
-    height: 1300px;
+    min-height: 1300px;
   }
 `;
 

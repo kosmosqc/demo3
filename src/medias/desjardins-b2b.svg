@@ -1,0 +1,60 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#051018" />
+      <stop offset="1" stop-color="#0C1F2A" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00A86B" />
+      <stop offset="1" stop-color="#46D39B" />
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="40" y="40" width="1120" height="820" rx="36" fill="url(#bg)" />
+  <rect x="40" y="40" width="1120" height="820" rx="36" fill="none" stroke="#1C3B4B" stroke-width="4" />
+
+  <rect x="110" y="170" width="260" height="220" rx="20" fill="#102634" stroke="#2C5A72" stroke-width="3" />
+  <rect x="140" y="210" width="200" height="18" rx="9" fill="#2E607A" />
+  <rect x="140" y="248" width="160" height="14" rx="7" fill="#2E607A" />
+  <rect x="140" y="278" width="180" height="14" rx="7" fill="#2E607A" />
+  <rect x="140" y="308" width="130" height="14" rx="7" fill="#2E607A" />
+  <text x="240" y="364" text-anchor="middle" fill="#BDE4F6" font-size="28" font-family="Arial, Helvetica, sans-serif">API REST</text>
+
+  <rect x="470" y="285" width="260" height="150" rx="22" fill="#0E2A27" stroke="url(#accent)" stroke-width="4" filter="url(#glow)" />
+  <text x="600" y="350" text-anchor="middle" fill="#D8FFE8" font-size="50" font-weight="700" font-family="Arial, Helvetica, sans-serif">B2B</text>
+  <text x="600" y="390" text-anchor="middle" fill="#9EEEC8" font-size="24" font-family="Arial, Helvetica, sans-serif">ServiceNow</text>
+
+  <circle cx="930" cy="230" r="84" fill="#143145" stroke="#5EA8CF" stroke-width="4" />
+  <circle cx="930" cy="450" r="84" fill="#143145" stroke="#5EA8CF" stroke-width="4" />
+  <circle cx="930" cy="670" r="84" fill="#143145" stroke="#5EA8CF" stroke-width="4" />
+
+  <text x="930" y="220" text-anchor="middle" fill="#D7EEFA" font-size="26" font-family="Arial, Helvetica, sans-serif">Fournisseur</text>
+  <text x="930" y="256" text-anchor="middle" fill="#D7EEFA" font-size="44" font-weight="700" font-family="Arial, Helvetica, sans-serif">01</text>
+
+  <text x="930" y="440" text-anchor="middle" fill="#D7EEFA" font-size="26" font-family="Arial, Helvetica, sans-serif">Fournisseur</text>
+  <text x="930" y="476" text-anchor="middle" fill="#D7EEFA" font-size="44" font-weight="700" font-family="Arial, Helvetica, sans-serif">02</text>
+
+  <text x="930" y="660" text-anchor="middle" fill="#D7EEFA" font-size="26" font-family="Arial, Helvetica, sans-serif">Fournisseur</text>
+  <text x="930" y="696" text-anchor="middle" fill="#D7EEFA" font-size="44" font-weight="700" font-family="Arial, Helvetica, sans-serif">03</text>
+
+  <line x1="730" y1="335" x2="840" y2="250" stroke="url(#accent)" stroke-width="7" stroke-linecap="round" />
+  <line x1="730" y1="360" x2="840" y2="450" stroke="url(#accent)" stroke-width="7" stroke-linecap="round" />
+  <line x1="730" y1="385" x2="840" y2="650" stroke="url(#accent)" stroke-width="7" stroke-linecap="round" />
+
+  <line x1="370" y1="280" x2="470" y2="335" stroke="#5EA8CF" stroke-width="6" stroke-linecap="round" />
+  <line x1="370" y1="330" x2="470" y2="360" stroke="#5EA8CF" stroke-width="6" stroke-linecap="round" />
+
+  <text x="120" y="745" fill="#98C5DA" font-size="34" font-family="Arial, Helvetica, sans-serif">
+    Integrations API REST + orchestration B2B + documentation technique
+  </text>
+  <text x="120" y="790" fill="#7FB2C9" font-size="30" font-family="Arial, Helvetica, sans-serif">
+    Parcours Desjardins
+  </text>
+</svg>

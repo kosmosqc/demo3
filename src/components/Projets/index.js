@@ -21,29 +21,38 @@ const Projets = () => {
       <ProjetsH1>
         <ProjetsTopline>Projets</ProjetsTopline>
         <ProjetsWrapper>
-          <ProjetsLink href="https://kosmicdiscovery.vercel.app/">
+          <ProjetsLink
+            href="https://kosmicdiscovery.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <ProjetsCard>
               <ProjetsIcon src={Icon3} />
-              <ProjetsH2>Blog de science
-                
-              </ProjetsH2>
+              <ProjetsH2>Blog de science</ProjetsH2>
               <ProjetsP>
-              
-              Un blog qui parle de science et de diverse théorie
+                Un blog qui parle de science et de diverses théories
               </ProjetsP>
             </ProjetsCard>
           </ProjetsLink>
-          <ProjetsLink href="https://life-stats-gamma.vercel.app/">
-          <ProjetsCard>
-            <ProjetsIcon src={Icon2} />
-            <ProjetsH2>Life Stats Calculator</ProjetsH2>
-            <ProjetsP>
-              Petite application qui affiche des infos intéressantes avec l'année de naissance de l'utilisateur
-              <br /><br />
-              (version alpha 0.1)
-            </ProjetsP>
-          </ProjetsCard>
+
+          <ProjetsLink
+            href="https://life-stats-gamma.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ProjetsCard>
+              <ProjetsIcon src={Icon2} />
+              <ProjetsH2>Life Stats Calculator</ProjetsH2>
+              <ProjetsP>
+                Petite application qui affiche des infos intéressantes avec
+                l'année de naissance de l'utilisateur
+                <br />
+                <br />
+                (version bêta 1.2)
+              </ProjetsP>
+            </ProjetsCard>
           </ProjetsLink>
+
           <ProjetsCard>
             <ProjetsIcon src={Icon1} />
             <ProjetsH2>Demo</ProjetsH2>

@@ -1,119 +1,127 @@
-import React from "react";
-import { useNavigate } from "react-router-dom"; // Import de useNavigate
-import "./Skill.css"; // Assurez-vous que Skill.css est importé correctement
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./Skill.css";
+
+const technicalSkills = [
+  { name: "ServiceNow", level: 90 },
+  { name: "JavaScript", level: 85 },
+  { name: "React.js", level: 70 },
+  { name: "Next.js", level: 70 },
+  { name: "HTML", level: 60 },
+  { name: "CSS", level: 60 },
+  { name: "SQL", level: 60 },
+];
+
+const tools = [
+  { name: "Windows 10/11", level: 90 },
+  { name: "PowerShell", level: 70 },
+  { name: "Linux", level: 60 },
+  { name: "Visual Studio Code", level: 80 },
+  { name: "GitHub", level: 70 },
+  { name: "Photoshop", level: 80 },
+];
+
+const experiences = [
+  "2024-2026 Desjardins - API REST et B2B (gestion de 2-3 fournisseurs)",
+  "Integrations variees et documentation technique",
+  "2022-2024 Developpeur ServiceNow",
+  "2022 Stage de 8 semaines - site web PHP, SQL, HTML, CSS",
+];
+
+const certifications = [
+  "Certified ServiceNow Implementer 2024",
+  "Certified ServiceNow Administrator 2022",
+  "2021-2022 College Rosemont - AEC en programmation orientee objet",
+];
+
+const passions = [
+  "Informatique & Technologie",
+  "Astronomie & Science",
+  "Histoire & Art",
+];
+
+const MeterList = ({ items, animate }) => (
+  <ul className="meter-list">
+    {items.map((item, index) => (
+      <li key={item.name} className="meter-item">
+        <div className="meter-label">
+          <span>{item.name}</span>
+          <span>{item.level}%</span>
+        </div>
+        <div className="meter-track">
+          <span
+            className="meter-fill"
+            style={{
+              width: animate ? `${item.level}%` : "0%",
+              transitionDelay: `${index * 120}ms`,
+            }}
+          />
+        </div>
+      </li>
+    ))}
+  </ul>
+);
 
 const Skillpage = () => {
-  const navigate = useNavigate(); // Initialisation de useNavigate
+  const navigate = useNavigate();
+  const [animateBars, setAnimateBars] = useState(false);
+
+  useEffect(() => {
+    const raf = requestAnimationFrame(() => {
+      setAnimateBars(true);
+    });
+
+    return () => cancelAnimationFrame(raf);
+  }, []);
 
   return (
-    <div className="container">
-      {" "}
-      {/* La classe container utilise l'image de fond */}
-      <button
-        onClick={() => navigate(-1)} // Navigation vers la page précédente
-        className="back-button"
-        style={{
-          marginBottom: "20px",
-          padding: "10px 20px",
-          backgroundColor: "#5f43b2",
-          color: "#fff",
-          border: "none",
-          borderRadius: "5px",
-          cursor: "pointer",
-        }}
-      >
-        Retour
-      </button>
-      
-      <p className="skillp">Skills et outils</p>
-      <div className="col">
-        <h2 className="titre">Skills</h2>
-        <ul className="skill">
-          <li>
-            <span className="purpleline servicenow"></span>
-            <em>ServiceNow</em>
-          </li>
-          <li>
-            <span className="purpleline javascript"></span>
-            <em>Javascript</em>
-          </li>
-          <li>
-            <span className="purpleline react"></span>
-            <em>React.js</em>
-          </li>
-          <li>
-            <span className="purpleline node"></span>
-            <em>Next.js</em>
-          </li>
-          <li>
-            <span className="purpleline html"></span>
-            <em>HTML</em>
-          </li>
-          <li>
-            <span className="purpleline css"></span>
-            <em>CSS</em>
-          </li>
-          <li>
-            <span className="purpleline sql"></span>
-            <em>SQL</em>
-          </li>
-        </ul>
-      </div>
-      <div className="col">
-        <h2 className="titre">Outils</h2>
-        <ul className="skill">
-          <li>
-            <span className="purpleline win10"></span>
-            <em>Windows 10</em>
-          </li>
-          <li>
-            <span className="purpleline powershell"></span>
-            <em>Powershell</em>
-          </li>
-          <li>
-            <span className="purpleline linux"></span>
-            <em>Linux</em>
-          </li>
-          <li>
-            <span className="purpleline visual"></span>
-            <em>Visual code</em>
-          </li>
-          <li>
-            <span className="purpleline git"></span>
-            <em>Git Hub</em>
-          </li>
-          <li>
-            <span className="purpleline ps"></span>
-            <em>PhotoShop</em>
-          </li>
-        </ul>
-        <h2 className="titre">Passion</h2>
-        <ul className="ul2">
-          <li>Informatique & Technologie</li>
-          <li>Astronomie & Science</li>
-          <li>Histoire & Art</li>
-        </ul>
-      </div>
-      <div className="col">
-        <h2 className="titre">Expérience</h2>
-        <ul className="ul2">
-          <li>2022-2024 ServiceNow Développeur</li>
-          <br />
-          <li>
-            2022 Stage de 8 semaines : concevoir un site web en PHP avec SQL,
-            HTML, CSS
-          </li>
-        </ul>
-        <h2 className="titre">Formation</h2>
-        <ul className="ul2">
-          <li>Certified ServiceNow implementer 2024</li>
-          <br />
-          <li>Certified ServiceNow administrator 2022</li>
-          <br />
-          <li>
-            2021-2022Collège Rosemont : AEC en programmation orientée objet
-          </li>
-        </ul>
+    <div className="skill-page">
+      <div className="skill-overlay" />
+
+      <div className="skill-shell">
+        <button onClick={() => navigate("/")} className="skill-back-button">
+          Accueil
+        </button>
+
+        <header className="skill-header">
+          <p className="skill-eyebrow">Skills et outils</p>
+          <h1 className="skill-title">Profil Technique</h1>
+        </header>
+
+        <main className="skill-grid">
+          <section className="skill-card">
+            <h2 className="skill-card-title">Skills</h2>
+            <MeterList items={technicalSkills} animate={animateBars} />
+          </section>
+
+          <section className="skill-card">
+            <h2 className="skill-card-title">Outils</h2>
+            <MeterList items={tools} animate={animateBars} />
+
+            <h2 className="skill-card-title skill-subsection">Passion</h2>
+            <ul className="text-list">
+              {passions.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="skill-card">
+            <h2 className="skill-card-title">Experience</h2>
+            <ul className="text-list">
+              {experiences.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+
+            <h2 className="skill-card-title skill-subsection">Formation</h2>
+            <ul className="text-list">
+              {certifications.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </section>
+        </main>
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ export const NavbarContainer = styled.nav`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1100px;
+  max-width: 1200px;
 `;
 
 export const NavLogo = styled(LinkR)`
@@ -38,14 +38,18 @@ export const NavLogo = styled(LinkR)`
   align-items: center;
   margin-left: 24px;
   text-decoration: none;
-   @media screen and (max-width: 768px) {
-   font-size: .7rem;
+  white-space: nowrap;
+  transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.7rem;
   }
-    &:hover {
-    transform: scale(1) rotate(5deg) skewX(10deg);
-      letter-spacing: 0.3rem;
-      color: #5f43b2;
-      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    transform: rotate(2deg);
+    color: #5f43b2;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
   }
 `;
 
@@ -69,7 +73,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
+  margin-right: 0;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -85,7 +89,8 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 20px;
+  white-space: nowrap;
+  padding: 0 14px;
   height: 100%;
   cursor: pointer;
   &:hover {
@@ -107,7 +112,7 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(LinkR)`
-  margin 1px;
+  margin: 1px;
  
   background: #5f43b2;
   white-space: nowrap;

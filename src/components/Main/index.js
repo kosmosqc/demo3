@@ -16,6 +16,7 @@ const Main = () => {
           autoPlay
           loop
           muted
+          playsInline
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         >
           <source src={Video} type="video/mp4" />
@@ -23,7 +24,9 @@ const Main = () => {
       </MainBg>
       <MainContent>
         <MainH1>Alain Gionet</MainH1>
-        <MainSubtitle>Développeur, rêveur, explorateur du code et du cosmos</MainSubtitle>
+        <MainSubtitle>
+          Développeur, rêveur, explorateur du code et du cosmos
+        </MainSubtitle>
       </MainContent>
     </MainContainer>
   );
