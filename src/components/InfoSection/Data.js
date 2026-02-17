@@ -1,3 +1,5 @@
+import desjardinsB2B from "../../medias/desjardins-b2b.svg";
+
 export const homeObg1 = {
   id: "about",
   lightBg: false,
@@ -70,7 +72,7 @@ export const homeObg4 = {
     "Chez Desjardins, j'ai pris en charge des flux API REST au cœur des échanges B2B, avec suivi de 3 fournisseurs, coordination d'intégrations transverses et production d'une documentation claire pour accélérer les livraisons.",
   buttonLabel: "Retour au début",
   imgStart: true,
-  img: require("../../medias/desjardins-b2b.jpg"),
+  img: desjardinsB2B,
   widthSet: false,
   dark: false,
   marginSet: true,

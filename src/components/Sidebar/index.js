@@ -1,5 +1,6 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll/modules";
+import { CV_URL } from "../../config/links";
 import {
   SidebarContainer,
   Icon,
@@ -38,7 +39,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             </SidebarLink>
             <SidebarLink
               as="a"
-              href="/cv.pdf"
+              href={CV_URL}
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -1,5 +1,4 @@
 import React from "react";
-import Video from "../../medias/video.mp4";
 import {
   MainContainer,
   MainBg,
@@ -19,7 +18,7 @@ const Main = () => {
           playsInline
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         >
-          <source src={Video} type="video/mp4" />
+          <source src="/video.mp4" type="video/mp4" />
         </video>
       </MainBg>
       <MainContent>

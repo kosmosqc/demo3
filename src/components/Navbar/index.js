@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { animateScroll as scroll } from "react-scroll/modules";
 import { FaBars } from "react-icons/fa";
+import { CV_URL } from "../../config/links";
 import {
   MobileIcon,
   Nav,
@@ -95,7 +96,7 @@ const Navbar = ({ toggle }) => {
             <NavBtn>
               <NavBtnLink
                 as="a"
-                href="/cv.pdf"
+                href={CV_URL}
                 target="_blank"
                 rel="noopener noreferrer"
               >
