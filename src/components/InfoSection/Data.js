@@ -67,9 +67,9 @@ export const homeObg4 = {
   lightTextDesc: false,
   topline: "Expérience : Desjardins | API REST & B2B",
   headLine:
-    "Pilotage du volet B2B ServiceNow avec 3 fournisseurs intégrés",
+    "Pilotage du volet B2B ServiceNow avec 3 fournisseurs",
   description:
-    "Chez Desjardins, j'ai pris en charge des flux API REST au cœur des échanges B2B, avec suivi de 3 fournisseurs, coordination d'intégrations transverses et production d'une documentation claire pour accélérer les livraisons.",
+   "Chez Desjardins, j'ai pris en charge des flux API REST au cœur des échanges B2B avec trois founisseurs. J'ai aussi travaillé sur diverses intégrations ainsi que les incidents liés.",
   buttonLabel: "Retour au début",
   imgStart: true,
   img: desjardinsB2B,
